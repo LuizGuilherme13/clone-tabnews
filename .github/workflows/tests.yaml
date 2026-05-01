@@ -2,7 +2,7 @@ name: Automated Tests
 
 on: pull_request
 
-jobs: 
+jobs:
   jest:
     name: Jest ubuntu
     runs-on: ubuntu-latest
@@ -16,4 +16,3 @@ jobs:
       - run: npm ci
 
       - run: npm test
-
