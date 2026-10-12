@@ -13,7 +13,7 @@ describe("POST /api/v1/migrations", () => {
           "http://localhost:3000/api/v1/migrations",
           {
             method: "POST",
-          }
+          },
         );
         expect(response.status).toBe(201);
 
@@ -25,7 +25,7 @@ describe("POST /api/v1/migrations", () => {
           "http://localhost:3000/api/v1/migrations",
           {
             method: "POST",
-          }
+          },
         );
         expect(response2.status).toBe(200);
         const response2Body = await response2.json();
